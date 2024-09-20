@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inproger Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Inproger Store</h1>
+            <nav>
+                <button id="cart-btn">Sepet (0)</button>
+                <button id="about-btn" onclick="openAboutPage()">Hakkında Daha Fazla</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section id="products">
+                <!-- Ürünler buraya eklenecek -->
+                <article class="product">
+                    <img src="213.jpg" alt="Ürün 1">
+                    <h2>Ürün 1</h2>
+                    <p>Fiyat: 100₺</p>
+                    <button onclick="addToCart('Ürün 1', 100)">Sepete Ekle</button>
+                </article>
+                <!-- Diğer ürünler buraya eklenecek -->
+            </section>
+            <section id="about" class="about">
+                <h2>Hakkında</h2>
+                <p>Inproger Store, kaliteli ürünleri uygun fiyatlarla sunan bir çevrimiçi alışveriş platformudur. Müşteri memnuniyetini ön planda tutarak, geniş ürün yelpazesi ile her türlü ihtiyacınıza cevap vermek için buradayız.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Inproger Store. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    <div id="cart" class="cart">
+        <div class="container">
+            <h2>Sepetiniz</h2>
+            <ul id="cart-items" class="cart-items"></ul>
+            <div class="cart-summary">
+                <p id="total-price">Toplam: 0₺</p>
+                <button id="checkout-btn">Ödeme Yap</button>
+            </div>
+        </div>
+    </div>
+    <div id="notification" class="notification"></div>
+    <script src="script.js"></script>
+</body>
+</html>
